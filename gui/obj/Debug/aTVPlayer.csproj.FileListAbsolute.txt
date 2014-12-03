@@ -1,0 +1,9 @@
+F:\Development\atv\aTVPlayer\bin\Debug\aTVPlayer.exe.config
+F:\Development\atv\aTVPlayer\bin\Debug\aTVPlayer.exe
+F:\Development\atv\aTVPlayer\bin\Debug\aTVPlayer.pdb
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.Form1.resources
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.Properties.Resources.resources
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.csproj.GenerateResource.Cache
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.exe
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.pdb
+F:\Development\atv\aTVPlayer\obj\Debug\aTVPlayer.csprojResolveAssemblyReference.cache
