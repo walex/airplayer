@@ -1,9 +1,0 @@
-F:\Development\atv\aTVPlayer\bin\Release\aTVPlayer.exe.config
-F:\Development\atv\aTVPlayer\bin\Release\aTVPlayer.exe
-F:\Development\atv\aTVPlayer\bin\Release\aTVPlayer.pdb
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.Form1.resources
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.Properties.Resources.resources
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.csproj.GenerateResource.Cache
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.exe
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.pdb
-F:\Development\atv\aTVPlayer\obj\Release\aTVPlayer.csprojResolveAssemblyReference.cache
