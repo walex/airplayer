@@ -51,6 +51,8 @@
             this.txtFFMPEGPath = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSearchFFMPEG = new System.Windows.Forms.Button();
+            this.txtStartTime = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAddFile
@@ -270,11 +272,30 @@
             this.btnSearchFFMPEG.UseVisualStyleBackColor = true;
             this.btnSearchFFMPEG.Click += new System.EventHandler(this.btnSearchFFMPEG_Click);
             // 
+            // txtStartTime
+            // 
+            this.txtStartTime.Location = new System.Drawing.Point(117, 504);
+            this.txtStartTime.Name = "txtStartTime";
+            this.txtStartTime.Size = new System.Drawing.Size(52, 20);
+            this.txtStartTime.TabIndex = 22;
+            this.txtStartTime.Text = "0.0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 507);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Offset ( % ):";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 534);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtStartTime);
             this.Controls.Add(this.btnSearchFFMPEG);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtFFMPEGPath);
@@ -330,6 +351,8 @@
         private System.Windows.Forms.TextBox txtFFMPEGPath;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSearchFFMPEG;
+        private System.Windows.Forms.TextBox txtStartTime;
+        private System.Windows.Forms.Label label4;
     }
 }
 

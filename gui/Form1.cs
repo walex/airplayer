@@ -246,6 +246,12 @@ namespace aTVPlayer
                 return;
             }
 
+            float startTime;
+            if (float.TryParse(txtStartTime.Text.Trim(), out startTime) == false || startTime < 0.0f || startTime > 1.0f)
+            {
+                MessageBox.Show("Please set a decimal number between 0 and 1 for plaback start field");
+                return;
+            }
             // start media server
             g_mediaServerThread = new System.Threading.Thread(MediaServerThread);
             try
@@ -282,7 +288,7 @@ namespace aTVPlayer
                 string fileName = Path.GetFileName(path);
                 using (var client = new System.Net.WebClient())
                 {
-                    string args = string.Format("Content-Location: http://{0}:{1}/{2}\nStart-Position: 0\n", g_mediaServerNI, g_mediaServerPort, fileName);
+                    string args = string.Format("Content-Location: http://{0}:{1}/{2}\nStart-Position: {3}\n", g_mediaServerNI, g_mediaServerPort, fileName, startTime);
                     client.UseDefaultCredentials = true;
                     client.UploadData(string.Format("http://{0}:{1}/play", ipAddr, g_airPlayCmdPort), "PUT", Encoding.ASCII.GetBytes(args));
 
@@ -311,6 +317,7 @@ namespace aTVPlayer
             
             txtAirplayIP.Enabled = false;
             txtMSPort.Enabled = false;
+            txtStartTime.Enabled = false;
             cbNI.Enabled = false;
             btnPlay.Enabled = false;
             btnStop.Enabled = true;
@@ -326,8 +333,9 @@ namespace aTVPlayer
             StopPlayBack(txtAirplayIP.Text.Trim());
             txtAirplayIP.Enabled = true;
             txtMSPort.Enabled = true;
+            txtStartTime.Enabled = true;
             cbNI.Enabled = true;
-            btnPlay.Enabled = true;
+            btnPlay.Enabled = true;            
             btnStop.Enabled = false;
         }        
 
